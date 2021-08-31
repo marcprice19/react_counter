@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Counter, { ALERT_COLOR, SUCCESS_COLOR } from "./Counter";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>App Component Here!!!!</h1>
+
+      <Counter teenCrush="Nic Jonas" />
+      <Counter teenCrush="Justin"/>
+      <Counter teenCrush="Da Rock"/>
     </div>
   );
-}
+};
 
 export default App;
